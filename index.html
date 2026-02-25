@@ -4,135 +4,210 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Full Stack Developer | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo"><span>Portfolio</span></div>
+<header>
+  <nav class="navbar">
+    <div class="logo"><span>Portfolio</span></div>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+    <button id="themeToggle" class="theme-btn">
+      <i class="fas fa-moon"></i>
+    </button>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Hello, I'm <span>Revatee Ghatage</span></h1>
-      <h2 class="typing"></h2>
-      <p>I build modern, scalable and high-performance web applications.</p>
-      <a href="#projects" class="btn">My projects</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
+  </nav>
+</header>
 
-  <!-- About -->
-  <section class="about reveal" id="about">
-    <h2>About Me</h2>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Hello, I'm <span>Revatee Ghatage</span></h1>
+    <h2 class="typing"></h2>
+    <p>I build modern, scalable and high-performance web applications.</p>
+    <a href="#projects" class="btn">My Projects</a>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/revatee-ghatage-8870aa27a/" target="_blank" class="icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <a href="https://github.com/Cyber1coder/Cyber1coder" target="_blank" class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="mailto:ghatagerevati3@gmail.com" class="icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="about reveal" id="about">
+  <h2>About Me</h2>
+
+  <div class="about-card">
     <p>
-      I'm a passionate Full Stack Developer specializing in building responsive,
-      scalable web applications using modern technologies.I have made several projects which has enhanced my skills and I am ready to work. 
+      I am a motivated Computer Science student and Full Stack Developer.
+      I specialize in both front-end and back-end development, with a solid understanding of databases, APIs, and system architecture.
     </p>
-  </section>
 
-  <!-- Skills -->
-  <section class="skills reveal" id="skills">
-    <h2>Skills</h2>
-    <div class="skill-container">
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">React</div>
-      <div class="skill-card">Node.js</div>
-      <div class="skill-card">Express.js</div>
-      <div class="skill-card">SupaBase</div>
-    </div>
-  </section>
+    <p>
+      I enjoy turning complex problems into simple, efficient, and scalable solutions. I am constantly learning new technologies and improving my development skills. 
+      My goal is to contribute to innovative projects while growing as a software engineer.
+    </p>
+  </div>
+</section>
 
- <!-- Projects -->
-<section class="projects reveal" id="projects">
-  <h2>My Projects</h2>
+<section class="skills reveal" id="skills">
+  <h2>Skills</h2>
 
-  <div class="project-container">
+  <div class="skills-wrapper">
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>Video Editor Portfolio</h3>
-      <p>
-        A cinematic portfolio website for a professional video editor with
-        smooth animations, gallery showcase and client testimonials.
-      </p>
-
-      <div class="project-buttons">
-        <a href="https://vijay-portfolio-five-theta.vercel.app/" target="_blank" class="btn project-btn">
-          Live Demo
-        </a>
-        <a href="https://github.com/Cyber1coder/Vijay-Portfolio" target="_blank" class="btn-outline">
-          GitHub Repo
-        </a>
+    <!-- Frontend -->
+    <div class="skill-category">
+      <h3>Frontend</h3>
+      <div class="skill-grid">
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=html"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=css"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=js"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=react"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=tailwind"></div>
       </div>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h3>Government Hospital Website</h3>
-      <p>
-        A fully responsive government hospital website with appointment booking,
-        department details, and emergency services information.
-      </p>
-
-      <div class="project-buttons">
-        <a href="https://shree-panchganga-hospital-website.vercel.app/" target="_blank" class="btn project-btn">
-          Live Demo
-        </a>
-        <a href="https://github.com/Cyber1coder/Shree-Panchganga-Hospital-Website" target="_blank" class="btn-outline">
-          GitHub Repo
-        </a>
+    <!-- Backend -->
+    <div class="skill-category">
+      <h3>Backend</h3>
+      <div class="skill-grid">
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=nodejs"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=express"></div>
+        
+      </div>
+    </div>
+    <div class="skill-category"><h3>Programming Languages</h3>
+      <div class="skill-grid">
+<div class="skill-item"><img src="https://skillicons.dev/icons?i=java"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=python"></div></div></div>
+    <!-- Database -->
+    <div class="skill-category">
+      <h3>Database</h3>
+      <div class="skill-grid">
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=mysql"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=supabase"></div>
       </div>
     </div>
 
-    <!-- Project 3 -->
-    <div class="project-card">
-      <h3>Dummy Project</h3>
-      <p>
-        A placeholder full stack project showcasing structure, layout and UI
-        without real backend integration.
-      </p>
-
-      <div class="project-buttons">
-        <button class="btn project-btn disabled">Live Demo</button>
-        <button class="btn-outline disabled">GitHub Repo</button>
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <div class="skill-grid">
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=git"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=github"></div>
+        <div class="skill-item"><img src="https://skillicons.dev/icons?i=postman"></div>
       </div>
     </div>
 
   </div>
 </section>
 
+<section class="projects reveal" id="projects">
+  <h2>My Projects</h2>
 
-  <!-- Contact -->
-  <section class="contact reveal" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: ghatagerevati3@gmail.com</p>
-  </section>
+  <div class="timeline">
 
-  <footer>
-    <p>© 2026 Made with love by Revatee Ghatage</p>
-  </footer>
+    <!-- Project 1 -->
+    <div class="timeline-item left">
+      <div class="project-card">
+        <h3>Video Editor Portfolio</h3>
+        <p>
+          A cinematic portfolio website with smooth animations,
+          gallery showcase and client testimonials.
+        </p>
 
-  <script src="script.js"></script>
+        <div class="project-buttons">
+          <a href="YOUR_LIVE_LINK_1" target="_blank" rel="noopener" class="btn-primary">Live Demo</a>
+          <a href="YOUR_GITHUB_LINK_1" target="_blank" rel="noopener" class="btn-secondary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="timeline-item right">
+      <div class="project-card">
+        <h3>Government Hospital Website</h3>
+        <p>
+          Responsive hospital website with booking system,
+          department information and emergency details.
+        </p>
+
+        <div class="project-buttons">
+          <a href="YOUR_LIVE_LINK_2" target="_blank" rel="noopener" class="btn-primary">Live Demo</a>
+          <a href="YOUR_GITHUB_LINK_2" target="_blank" rel="noopener" class="btn-secondary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="timeline-item left">
+      <div class="project-card">
+        <h3>Tech Interview Prep Bot</h3>
+        <p>
+          Full stack chatbot built using React, Node and
+          database integration for interview preparation.
+        </p>
+
+        <div class="project-buttons">
+          <a href="YOUR_LIVE_LINK_3" target="_blank" rel="noopener" class="btn-primary">Live Demo</a>
+          <a href="YOUR_GITHUB_LINK_3" target="_blank" rel="noopener" class="btn-secondary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="timeline-item right">
+      <div class="project-card">
+        <h3>Full Stack CRUD App</h3>
+        <p>
+          Complete CRUD application with authentication,
+          API integration and database handling.
+        </p>
+
+        <div class="project-buttons">
+          <a href="YOUR_LIVE_LINK_4" target="_blank" rel="noopener" class="btn-primary">Live Demo</a>
+          <a href="YOUR_GITHUB_LINK_4" target="_blank" rel="noopener" class="btn-secondary">GitHub Repo</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="contact reveal" id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: ghatagerevati3@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Revatee Ghatage</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

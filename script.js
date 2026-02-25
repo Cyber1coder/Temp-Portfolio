@@ -1,30 +1,12 @@
-// Hamburger Toggle
+// Hamburger
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("navLinks");
 
-hamburger.addEventListener("click", () => {
+hamburger?.addEventListener("click", () => {
   navLinks.classList.toggle("active");
-  hamburger.classList.toggle("toggle");
 });
 
-// Scroll Reveal
-window.addEventListener("scroll", reveal);
-
-function reveal() {
-  const reveals = document.querySelectorAll(".reveal");
-
-  reveals.forEach((element) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
-    const visible = 150;
-
-    if (elementTop < windowHeight - visible) {
-      element.classList.add("active");
-    }
-  });
-}
-
-// Typing Effect
+// Typing
 const typing = document.querySelector(".typing");
 const textArray = ["Full Stack Developer", "Frontend Expert", "Backend Engineer"];
 let textIndex = 0;
@@ -52,3 +34,19 @@ function eraseEffect() {
 }
 
 document.addEventListener("DOMContentLoaded", typeEffect);
+
+// Theme Toggle
+const themeToggle = document.getElementById("themeToggle");
+const icon = themeToggle.querySelector("i");
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+  } else {
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+  }
+});
